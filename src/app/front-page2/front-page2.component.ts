@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
     <div> template written in same .ts file </div>
   `,
   // styleUrls: ['./front-page2.component.css']
+
   styles: [`
     h1{
       text-align:center;
