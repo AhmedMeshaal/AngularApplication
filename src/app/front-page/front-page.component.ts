@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./front-page.component.css']
 })
 export class FrontPageComponent implements OnInit {
-     appName = 'Angular Application';
+     appName = 'Angular  Application';
 
   constructor() { }
 
