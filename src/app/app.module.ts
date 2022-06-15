@@ -22,4 +22,3 @@ import { FrontPage2Component } from './front-page2/front-page2.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-

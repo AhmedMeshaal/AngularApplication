@@ -21,4 +21,3 @@ describe('FrontPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
