@@ -6,12 +6,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPage2Component } from './front-page2/front-page2.component';
+import { FrontPage3Component } from './front-page3/front-page3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
-    FrontPage2Component
+    FrontPage2Component,
+    FrontPage3Component
   ],
   imports: [
     BrowserModule,
