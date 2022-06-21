@@ -66,4 +66,28 @@ button {
   text-decoration: line-through;
 }
 
+.text-primary {
+  color: blue;
+}
 
+.text-danger {
+  color: red;
+}
+
+.text-success {
+  color: lawngreen;
+}
+
+.text-special {
+  font-weight:bold;
+  font-style: italic;
+  color:orchid;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+}
+
+.text-orange {
+  color: orange;
+}

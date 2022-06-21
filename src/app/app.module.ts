@@ -7,13 +7,19 @@ import { MatSliderModule } from '@angular/material/slider';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPage2Component } from './front-page2/front-page2.component';
 import { FrontPage3Component } from './front-page3/front-page3.component';
+import { FrontPage4Component } from './front-page4/front-page4.component';
+import { FrontPage5Component } from './front-page5/front-page5.component';
+import { FrontPage6Component } from './front-page6/front-page6.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
     FrontPage2Component,
-    FrontPage3Component
+    FrontPage3Component,
+    FrontPage4Component,
+    FrontPage5Component,
+    FrontPage6Component
   ],
   imports: [
     BrowserModule,
