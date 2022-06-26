@@ -1,0 +1,14 @@
+<div>
+  <h1>component-demo8-eventbinding works!</h1>
+
+  <h2>Event Binding</h2>
+
+  <h1 (click)="fn_changeStyles()" [class.text-primary]="isButtonClicked" style="cursor:pointer;">Click Me - Change Style</h1>
+
+  <div>isButtonClicked: {{isButtonClicked}}.  | {{isButtonClicked ? greetingMessage : " "}} </div> <br /><br />
+
+  <button (click)="fn_checkClick($event)">Click me!</button> Event: {{eventType}}
+
+  <button (click)="withoutHandlerMessage = 'Without handler function' ">Without handler function - Click me!</button> {{withoutHandlerMessage}}
+
+</div>

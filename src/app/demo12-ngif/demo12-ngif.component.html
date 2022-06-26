@@ -1,0 +1,38 @@
+<div>
+  <h1>component-demo12-ngif works!</h1>
+
+  <h2>*ngIf</h2>
+
+  <ul>
+    <li *ngIf="true">Show me </li>
+    <li *ngIf="false">I am NOT rendered in DOM </li>
+    <li *ngIf="isShow">Please show me - conditional variable/property from class</li>
+  </ul>
+
+  <h2>ngIf else ng-template</h2>
+  If condition is false, different DOM element renders as specified in "ng-template else">
+
+  <!-- variable true - show me, else show other ng-template -->
+  <div *ngIf="hasDisplay; else elseTemplate">
+    <h5>I have used in ngIf TRUE part</h5>
+  </div>
+
+  <ng-template #elseTemplate>
+    <h5>I am using ngIf FALSE/ELSE part in ng-template</h5>
+  </ng-template>
+
+  <h2>ngIf - ng-template else ng-template</h2>
+  depends on variable/condition show ng-template1 else show other ng-template2
+
+  <!-- variable true then show ng-template1 else show other ng-template2 -->
+  <div *ngIf="hasDisplay; then trueTemplate; else falseTemplate"></div>
+
+  <ng-template #trueTemplate>
+    <h5>I am #trueTemplate</h5>
+  </ng-template>
+
+  <ng-template #falseTemplate>
+    <h5>I am #falseTemplate</h5>
+  </ng-template>
+
+</div>

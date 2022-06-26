@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  parentMessage = 'From Parent';
-  title = 'angularApplication'
+  parentMessage = 'From Ahsa';
+  // parentTitle = 'Ahmed Hassan';
+
+//  parent to child
+  messageChild;
 
 }

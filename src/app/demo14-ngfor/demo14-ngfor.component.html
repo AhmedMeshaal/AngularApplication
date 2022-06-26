@@ -1,0 +1,34 @@
+<div>
+  <h1>component-demo14-ngfor works!</h1>
+
+  <h2>*ngFor</h2>
+
+  <h2>*ngFor Basics </h2>
+  <ul>
+    <li *ngFor="let color of arrColors" [style.color]="color">
+      {{color}}
+    </li>
+  </ul>
+
+  <h2>*ngFor with id and class </h2>
+  <ul>
+    <li *ngFor="let color of arrColors;" id="{{color}}" class="{{color}}" [style.color]="color">
+      {{color}}
+    </li>
+  </ul>
+
+  <h2>*ngFor with index </h2>
+  <ul>
+    <li *ngFor="let color of arrColors; index as curIndex" id="{{color}}" class="{{color}}" [style.color]="color">
+      Index is: {{curIndex + 1 }}. {{color}}
+    </li>
+  </ul>
+
+  <h2>*ngFor with index - first / last / even / odd </h2>
+  <ul>
+    <li *ngFor="let color of arrColors; index as curIndex; first as firstIndex; last as lastIndex; even as evenIndex; odd as oddIndex" id="{{color}}" class="{{color}}" [style.color]="color">
+      {{curIndex}}. {{color}}  :--:  First Item: {{firstIndex}}  :--: Last Item: {{lastIndex}}  :--:  Odd: {{oddIndex}} :--:  Even: {{evenIndex}} :--:
+    </li>
+  </ul>
+
+</div>

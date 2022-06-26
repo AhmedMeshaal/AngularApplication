@@ -1,0 +1,13 @@
+<div>
+  <h1>component-demo13-ngswitch works!</h1>
+
+  <h2>*ngSwtich</h2>
+
+  <div [ngSwitch]="curColor">
+    <div *ngSwitchCase="'red'" [style.color]="curColor">RED | {{curColor}} | color</div>
+    <div *ngSwitchCase="'green'" [style.color]="curColor">GREEN | {{curColor}} | color</div>
+    <div *ngSwitchCase="'blue'" [style.color]="curColor">BLUE | {{curColor}} | color</div>
+    <div *ngSwitchDefault>Default BLACK</div>
+  </div>
+
+</div>
