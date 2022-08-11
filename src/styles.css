@@ -91,3 +91,7 @@ button {
 .text-orange {
   color: orange;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -30,6 +30,9 @@ import { Demo17ServiceemployeelistComponent } from './demo17-serviceemployeelist
 
 import { HttpClientModule } from "@angular/common/http";
 import { EmployeeHttpListComponent } from './employee-http-list/employee-http-list.component';
+import { BlueHighlightDirective } from './directives/blue-highlight.directive';
+import { HighlightClickDirective } from './directives/highlight-click.directive';
+import { SquareRootPipePipe } from './pipe/square-root-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -50,7 +53,10 @@ import { EmployeeHttpListComponent } from './employee-http-list/employee-http-li
     Demo15ChildparenComponent,
     Demo16PipesfiltersComponent,
     Demo17ServiceemployeelistComponent,
-    EmployeeHttpListComponent
+    EmployeeHttpListComponent,
+    BlueHighlightDirective,
+    HighlightClickDirective,
+    SquareRootPipePipe,
   ],
   imports: [
     BrowserModule,
