@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+// import { MatSliderModule } from '@angular/material/slider';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPage2Component } from './front-page2/front-page2.component';
 import { FrontPage3Component } from './front-page3/front-page3.component';
@@ -33,6 +33,17 @@ import { EmployeeHttpListComponent } from './employee-http-list/employee-http-li
 import { BlueHighlightDirective } from './directives/blue-highlight.directive';
 import { HighlightClickDirective } from './directives/highlight-click.directive';
 import { SquareRootPipePipe } from './pipe/square-root-pipe.pipe';
+import { AppRoutingModule } from './app-routing.module';
+
+import { MatSliderModule } from "@angular/material/slider";
+import { SideNavComponent } from './side-nav/side-nav.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { MatButtonModule } from "@angular/material/button";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -57,13 +68,22 @@ import { SquareRootPipePipe } from './pipe/square-root-pipe.pipe';
     BlueHighlightDirective,
     HighlightClickDirective,
     SquareRootPipePipe,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSliderModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    MatSliderModule,
+    MatSidenavModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule,
+    RouterModule
   ],
   providers: [EmployeeService,EmployeeHttpService],
   bootstrap: [AppComponent]

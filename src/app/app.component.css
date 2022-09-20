@@ -1,0 +1,36 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100%;
+}
+mat-sidenav{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 200px;
+}
+nav-list-item{
+  margin: 50px;
+  padding: 1px;
+}
+mat-nav-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+mat-nav-list a {
+  display: block;
+  color: #000;
+  padding: 28px 26px;
+  text-decoration: none;
+  width: 200px;
+  font-size: 25px;
+}
+mat-nav-list a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
