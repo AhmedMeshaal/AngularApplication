@@ -1,0 +1,27 @@
+.columns a img{
+  padding-right: 1.07143rem;
+  padding-left: 1.07143rem;
+  float: left;
+  /*vertical-align: middle;*/
+}
+.column-block {
+  margin-bottom: 1.42857rem;
+}
+.imgLink {
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  color: #1779ba;
+  margin: 0 2.07143rem 0 2.07143rem;
+}
+.imgLink img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  box-sizing: inherit;
+}
+.text-center {
+  padding: 1.07431rem;
+}
