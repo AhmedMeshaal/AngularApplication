@@ -3,3 +3,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+.row-collapse {
+  max-width: none;
+}
+.row {
+  max-width: none;
+}
+
+

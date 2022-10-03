@@ -12,4 +12,5 @@ export class BannarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ImagePath = "/assets/images/logo-example.jpg";
 }
