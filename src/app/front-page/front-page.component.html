@@ -1,14 +1,139 @@
-<div>
-  <h1>component-demo1 works!</h1>
-  <ul>
-    <li>{{ appName }}</li>
-  </ul>
-
-  <h2>What is Angular</h2>
-  <ul>
-    <li>Framework to build client side application</li>
-    <li>Great for SPAs</li>
-    <li>Angular 2/4/5/6/7 frameworks targets Mobile and Desktop.</li>
-  </ul>
-
+<!-- BANNER SECTION-->
+<div class="site-logo">
+  <img [src]="ImagePath"><BR><BR>
 </div>
+
+
+<div class="row-collapse">
+  <h1 class="text-center">Welcome to The Uniform Store Online!</h1><BR>
+</div>
+
+<div class="row-collapse">
+  <p class="text-center">
+    Here you will find the same great selections you can find in our retail stores.<BR>
+    We hope you enjoy your shopping experience, and please come by our retail locations - we would love to see you!<BR><BR>
+    The links below are some of our most popular lines.
+  </p>
+  <BR><BR>
+</div>
+
+<!-- PRODUCTS LIST SECTION -->
+<div class="row">
+  <div class="text-center">
+    <a class="imgLink">
+      <img [src]="ImagePathProduct1">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct2">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct3">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct4">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a class="imgLink">
+      <img [src]="AdImage">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a class="imgLink">
+      <img [src]="ImagePathProduct5">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct6">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct7">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct8">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a style="display: inline-block;">
+      <img [src]="AdImage2">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a class="imgLink">
+      <img [src]="ImagePathProduct9">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct11">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct10">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct12">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a style="display: inline-block;">
+      <img [src]="AdImage3">
+    </a>
+  </div>
+
+  <div class="text-center">
+    <a class="imgLink">
+      <img [src]="ImagePathProduct13">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct14">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct15">
+    </a>
+    <a class="imgLink">
+      <img [src]="ImagePathProduct16">
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER SECTION -->
+<div class="row-collapse">
+  <p class="text-center">If you have already established on-line access to our WebStore, select the "Sign in" option at
+    the top to review your purchase and order history. You can even re-print a receipt if you like. <br><br>If you are
+    new to the WebStore, but have made purchases in our retail store and have a receipt, you can create an on-line ID
+    that is linked to your existing account. Just select the "Sign in" option and choose "Link to My Existing Account".
+  </p>
+</div>
+
+<div id="layout-row-footer" class="row-collapse">
+  <a [href]="stackoverflowUrl" target="_blank">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/stackoverflow-hexagon-social-media-32.png" alt=""
+         matTooltip="StackOverflow" matTooltipPosition="above">
+  </a>
+  <a [href]="twitterUrl" target="_blank">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/twitter-hexagon-social-media-32.png" alt="" matTooltip="Twitter"
+         matTooltipPosition="above">
+  </a>
+  <a [href]="githubUrl" target="_blank">
+    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_six_color-32.png" alt="" matTooltip="Github"
+         matTooltipPosition="above">
+  </a>
+  <a [href]="facebookUrl" target="_blank">
+    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-16-32.png" alt="" matTooltip="Facebook" matTooltipPosition="above">
+  </a>
+  <a [href]="googleUrl" target="_blank">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/google_plus-hexagon-social-media-32.png" alt=""
+         matTooltip="Google+" matTooltipPosition="above">
+  </a>
+  <a [href]="linkedinUrl" target="_blank">
+    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-11-32.png" alt="" matTooltip="LinkedIn" matTooltipPosition="above">
+  </a>
+  <BR>
+  Copyright © 2020 The Uniform Store, All Rights Reserved | 
+  <a href="PrivacyPolicy">Privacy Notice</a>
+  Site powered by: The Uniform Solution 6.57100 10/02/22  4:14:48 1
+</div>
+
+
