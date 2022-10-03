@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" style="overflow: hidden; /* Hide scrollbars */">
   <mat-toolbar-row>
           <button mat-icon-button>
             <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
@@ -10,18 +10,29 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav opened="true" mode="side">
     <mat-nav-list>
-        <a nav-list-item><strong>Home</strong></a>
-        <a nav-list-item><strong>Career</strong></a>
-        <a nav-list-item><strong>News</strong></a>
-        <a nav-list-item><strong>About</strong></a>
-        <a nav-list-item><strong>Contact</strong></a>
-     </mat-nav-list>
-      <mat-sidenav-content>
-          <div style="height: 88vh;">
-              <router-outlet>
-              </router-outlet>
-          </div>
-    </mat-sidenav-content>
-  </mat-sidenav>
-</mat-sidenav-container>
+        <a nav-list-item routerLink="/front-page" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Home</strong></a>
+        <a nav-list-item routerLink="/demo13-ngswitch" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Career</strong></a>
+        <a nav-list-item routerLink="/demo12-ngif"><strong>News</strong></a>
+        <a nav-list-item routerLink=""><strong>About</strong></a>
+        <a nav-list-item routerLink=""><strong>Contact</strong></a>
 
+     </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content><BR>
+    <div>
+      <router-outlet></router-outlet>
+<!--      <app-bannar></app-bannar>-->
+
+<!--      <app-card-grid></app-card-grid>-->
+
+<!--      <app-footer></app-footer>-->
+    </div>
+
+<!--  <app-carousel></app-carousel>-->
+
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
