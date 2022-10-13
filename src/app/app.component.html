@@ -1,38 +1,36 @@
+<body>
 <mat-toolbar color="primary" style="overflow: hidden; /* Hide scrollbars */">
   <mat-toolbar-row>
           <button mat-icon-button>
             <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
           </button>
-    <h1>Angular Sidenav Toolbar</h1>
+    <h1>MENU</h1>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav opened="true" mode="side">
-    <mat-nav-list>
+  <mat-sidenav #sidenav  mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+               (closed)="events.push('close!')">
+    <mat-nav-list (click)="toggle(sidenav)">
         <a nav-list-item routerLink="/front-page" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Home</strong></a>
-        <a nav-list-item routerLink="/demo13-ngswitch" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Career</strong></a>
-        <a nav-list-item routerLink="/demo12-ngif"><strong>News</strong></a>
-        <a nav-list-item routerLink=""><strong>About</strong></a>
-        <a nav-list-item routerLink=""><strong>Contact</strong></a>
+        <a nav-list-item routerLink="/card-grid"><strong>Shop All</strong></a>
+        <a nav-list-item routerLink="/shop-by-color" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Shop By Colour</strong></a>
+        <a nav-list-item routerLink="/contact-us"><strong>Contact US</strong></a>
+        <a nav-list-item routerLink=""><strong>*******</strong></a>
 
      </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content><BR>
+  <mat-sidenav-content  class="container"><BR>
     <div>
       <router-outlet></router-outlet>
-<!--      <app-bannar></app-bannar>-->
-
-<!--      <app-card-grid></app-card-grid>-->
-
 <!--      <app-footer></app-footer>-->
     </div>
-
-
-
-
-
   </mat-sidenav-content>
-
 </mat-sidenav-container>
+
+<app-footer class="container"></app-footer>
+</body>
+
+
+

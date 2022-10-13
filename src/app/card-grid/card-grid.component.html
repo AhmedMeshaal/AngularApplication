@@ -1,79 +1,37 @@
-<div class="row">
-  <div class="text-center">
-    <a class="imgLink">
-      <img [src]="ImagePathProduct1">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct2">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct3">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct4">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a class="imgLink">
-      <img [src]="AdImage">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a class="imgLink">
-      <img [src]="ImagePathProduct5">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct6">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct7">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct8">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a style="display: inline-block;">
-      <img [src]="AdImage2">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a class="imgLink">
-      <img [src]="ImagePathProduct9">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct11">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct10">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct12">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a style="display: inline-block;">
-      <img [src]="AdImage3">
-    </a>
-  </div>
-
-  <div class="text-center">
-    <a class="imgLink">
-      <img [src]="ImagePathProduct13">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct14">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct15">
-    </a>
-    <a class="imgLink">
-      <img [src]="ImagePathProduct16">
-    </a>
-  </div>
+<div class="site-logo">
+  <img [src]="ImagePath"><BR><BR>
 </div>
+
+<div class="text-center">
+
+  <ul *ngFor="let uniformImage of uniformImages | slice:0:7;">
+        <li>
+            <a class="imgLink">
+              <img src='{{ uniformImage.url }}'>
+              <p>{{ uniformImage.title }}</p>
+              <span><strong>{{ uniformImage.price }} SR</strong></span>
+            </a>
+        </li>
+  </ul>
+
+  <ul *ngFor="let uniformImage of uniformImages2 | slice:0:7;">
+    <li>
+      <a class="imgLink">
+        <img src='{{ uniformImage.url }}'>
+        <p>{{ uniformImage.title }}</p>
+        <span><strong>{{ uniformImage.price }} SR</strong></span>
+      </a>
+    </li>
+  </ul>
+
+  <ul *ngFor="let uniformImage of uniformImages3 | slice:0:7;">
+    <li>
+      <a class="imgLink">
+        <img src='{{ uniformImage.url }}'>
+        <p>{{ uniformImage.title }}</p>
+        <span><strong>{{ uniformImage.price }} SR</strong></span>
+      </a>
+    </li>
+  </ul>
+
+</div><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
