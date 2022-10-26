@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, BehaviorSubject, Subject } from "rxjs";
-import { API_SERVER_URL } from "../../../environments/environment";
-import {Product} from "./models/product.model";
+import { API_SERVER_URL } from "../../environments/environment";
+import { Product } from "../models/product.model";
 import {tap} from "rxjs/operators";
 
 
@@ -17,8 +17,8 @@ export class ProductsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  findAll (): Observable<any> {
-    return this.httpClient.get(`${API_SERVER_URL}/api/products`).pipe(
+  load_product (): Observable<any> {
+    return this.httpClient.get(`${API_SERVER_URL}/api/products/load_product`).pipe(
       tap(async (res: any) => {
         console.log(res);
       })

@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from "../services/products.service";
 
 @Component({
-  selector: 'app-card-grid',
-  templateUrl: './card-grid.component.html',
-  styleUrls: ['./card-grid.component.css']
+  selector: 'app-products',
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
 })
-export class CardGridComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 
   product_data:any = [];
   ImagePath = "/assets/images/logo-example.jpg";

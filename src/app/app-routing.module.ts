@@ -3,16 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from "@angular/router";
 
 import { FrontPageComponent } from "./front-page/front-page.component";
-import {CardGridComponent} from "./card-grid/card-grid.component";
-import { ShopByColorComponent } from "./shop-by-color/shop-by-color.component";
+import {ProductListComponent} from "./products/product-list.component";
 import {ContactUsComponent} from "./contact-us/contact-us.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'front-page', pathMatch: 'full', title: 'HOME'}, // REDIRECT TO PATH
   { path: 'front-page', title: 'HOME', component: FrontPageComponent },
   { path: 'contact-us', title: 'Contact Us', component: ContactUsComponent },
-  { path: 'shop-by-color', title: 'SHOP BY COLOUR', component: ShopByColorComponent },
-  { path: 'card-grid', title: 'SHOP ALL', component: CardGridComponent }
+  { path: 'products', title: 'SHOP ALL', component: ProductListComponent }
 ];
 
 @NgModule({

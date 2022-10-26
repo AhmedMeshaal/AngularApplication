@@ -12,21 +12,11 @@ export class AppComponent {
   events: string[] = [];
   opened: boolean = true;
 
-  shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h =>
-    h.test(window.location.host)
-  );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 
-  toggle(nav: MatSidenav) {
-    const isSmallScreen = this.breakpointObserver.isMatched(
-      "(max-width: 599px)"
-    );
-    if (isSmallScreen) {
-      nav.toggle();
-    }
-  }
+
 
 
 }

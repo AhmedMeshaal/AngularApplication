@@ -2,7 +2,7 @@
 <mat-toolbar color="primary" style="overflow: hidden; /* Hide scrollbars */">
   <mat-toolbar-row>
           <button mat-icon-button>
-            <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+            <mat-icon>menu</mat-icon>
           </button>
     <h1>MENU</h1>
   </mat-toolbar-row>
@@ -11,10 +11,10 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav  mode="side" [(opened)]="opened" (opened)="events.push('open!')"
                (closed)="events.push('close!')">
-    <mat-nav-list (click)="toggle(sidenav)">
+    <mat-nav-list>
         <a nav-list-item routerLink="/front-page" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Home</strong></a>
-        <a nav-list-item routerLink="/card-grid"><strong>Shop All</strong></a>
-        <a nav-list-item routerLink="/shop-by-color" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Shop By Colour</strong></a>
+        <a nav-list-item routerLink="/products"><strong>Shop All</strong></a>
+<!--        <a nav-list-item routerLink="/shop-by-color" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Shop By Colour</strong></a>-->
         <a nav-list-item routerLink="/contact-us"><strong>Contact US</strong></a>
         <a nav-list-item routerLink=""><strong>*******</strong></a>
 
