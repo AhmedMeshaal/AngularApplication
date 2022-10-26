@@ -1,0 +1,20 @@
+<div class="site-logo">
+  <img [src]="ImagePath"><BR><BR>
+</div>
+
+<div class="text-center">
+
+
+  <ul *ngFor="let product_data of product_data">
+    <li>
+      <a class="imgLink">
+        <img src='{{ product_data.photo_path }}'>
+        <p>{{ product_data.product_name }}</p>
+        <span><strong>{{ product_data.product_price }} SR</strong></span>
+      </a>
+    </li>
+  </ul>
+
+
+
+</div><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
