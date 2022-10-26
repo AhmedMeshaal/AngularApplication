@@ -1,4 +1,6 @@
 export const environment = {
-  production: true,
-  baseUrl: 'http://:::8081/api/'
+  production: true
 };
+
+export const API_SERVER_URL = 'http://localhost:8081';
+

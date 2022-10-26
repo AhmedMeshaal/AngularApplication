@@ -3,9 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  baseUrl: 'http://:::8081/api/'
+  production: false
 };
+
+export const API_SERVER_URL = 'http://localhost:8081';
 
 /*
  * For easier debugging in development mode, you can import the following file
